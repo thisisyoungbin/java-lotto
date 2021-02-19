@@ -8,7 +8,7 @@ public class LottoNumber implements Comparable<LottoNumber> {
     private static final int MAX_NUMBER_OF_LOTTO = 45;
     private final int number;
 
-    public LottoNumber(int number) {
+    public LottoNumber(Integer number) {
         this(Integer.toString(number));
     }
 
@@ -20,6 +20,10 @@ public class LottoNumber implements Comparable<LottoNumber> {
 
     public int getNumber() {
         return number;
+    }
+
+    public String getStringNumber() {
+        return String.valueOf(number);
     }
 
     private void validateLottoNumber(String number) {
@@ -62,9 +66,9 @@ public class LottoNumber implements Comparable<LottoNumber> {
         return number == that.number;
     }
 
-
     @Override
     public int hashCode() {
         return Objects.hash(number);
     }
+
 }
