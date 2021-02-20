@@ -2,7 +2,11 @@ package lotto.domain;
 
 public class LottoGame {
 
+    private Lottos lottos;
+
     public Lottos buyLottos(Money money) {
+
+
 
         return new Lottos(money);
     }
