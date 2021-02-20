@@ -19,7 +19,6 @@ public class LottoTest {
             new LottoNumber(6), new LottoNumber(7)
     ));
 
-
     @DisplayName("로또 생성자 테스트")
     @Test
     void createLotto() {
